@@ -13,6 +13,7 @@
 |
 */
 
-$router->get('/', function () use ($router) {
-    return $router->app->version();
+$router->group(['prefix' => 'balance'], function () use ($router) {
+    $router->get('/get', 'BalanceController@get');
+    $router->get('/purchase', 'BalanceController@purchase');
 });

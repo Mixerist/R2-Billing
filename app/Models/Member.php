@@ -6,6 +6,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class Member extends Model
 {
+    protected $casts = [
+        'Cash' => 'int'
+    ];
+
     protected $primaryKey = 'mUserNo';
 
     protected $table = 'Member';
