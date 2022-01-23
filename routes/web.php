@@ -13,7 +13,7 @@
 |
 */
 
-$router->group(['prefix' => 'balance'], function () use ($router) {
+$router->group(['prefix' => 'balance', 'middleware' => 'check.server.ip'], function () use ($router) {
     $router->get('/get', 'BalanceController@get');
     $router->get('/purchase', 'BalanceController@purchase');
 });
