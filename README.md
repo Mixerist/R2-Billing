@@ -32,7 +32,7 @@ git clone git@github.com:Mixerist/R2-Billing.git .
 Находясь в папке с проектом используйте команду для установки зависимостей:
 
 ```bash
-composer install
+composer install --no-dev
 ```
 
 Дождитесь окончания установки и скопируйте конфигурационный файл командой:
